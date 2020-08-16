@@ -1,0 +1,27 @@
+{
+  "name": "no-cookies",
+  "version": "1.0.0",
+  "description": "Cross browser library to disable/enable cookies. Great when following cookielaw guidelines",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha  --require @babel/register test/unit.js",
+    "build": "babel index.js -o dist/no-cookies.js && uglifyjs dist/no-cookies.js -o dist/no-cookies.min.js"
+  },
+  "keywords": [
+    "cookies",
+    "cookielaw",
+    "javascript",
+    "browser",
+    "library"
+  ],
+  "author": "Maxime Helen",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.5",
+    "mocha": "^8.0.1",
+    "uglify-js": "^3.10.0"
+  }
+}
