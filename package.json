@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --require @babel/register test/unit.js",
-    "build": "babel index.js -o dist/no-cookies.js && uglifyjs dist/no-cookies.js -o dist/no-cookies.min.js"
+    "build": "babel index.js -o dist/no-cookies.js && uglifyjs dist/no-cookies.js -o dist/no-cookies.min.js",
+    "eslint": "eslint index.js test/*"
   },
   "keywords": [
     "cookies",
@@ -21,6 +22,13 @@
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
     "@babel/register": "^7.10.5",
+    "eslint": "^7.7.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-mocha": "^8.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "mocha": "^8.1.1",
     "uglify-js": "^3.10.0"
   }
