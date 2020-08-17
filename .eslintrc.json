@@ -5,7 +5,7 @@
         "mocha": true
     },
     "extends": [
-        "standard"
+        "airbnb-base"
     ],
     "parserOptions": {
         "ecmaVersion": 11,

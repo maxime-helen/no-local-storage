@@ -1,19 +1,19 @@
 {
-  "name": "no-cookies",
+  "name": "no-local-storage",
   "version": "1.0.0",
-  "description": "Cross browser library to disable/enable cookies. Great when following cookielaw guidelines",
+  "description": "Cross browser library to disable/enable local storage. Great for following CCPA guidelines",
   "main": "index.js",
   "scripts": {
     "test": "mocha --require @babel/register test/unit.js",
-    "build": "babel index.js -o dist/no-cookies.js && uglifyjs dist/no-cookies.js -o dist/no-cookies.min.js",
+    "build": "babel index.js -o dist/no-local-storage.js && uglifyjs dist/no-local-storage.js -o dist/no-local-storage.min.js",
     "eslint": "eslint index.js test/*"
   },
   "keywords": [
-    "cookies",
+    "local-storage",
     "cookielaw",
+    "CCPA",
     "javascript",
-    "browser",
-    "library"
+    "browser"
   ],
   "author": "Maxime Helen",
   "license": "ISC",
@@ -23,7 +23,7 @@
     "@babel/preset-env": "^7.10.4",
     "@babel/register": "^7.10.5",
     "eslint": "^7.7.0",
-    "eslint-config-standard": "^14.1.1",
+    "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-mocha": "^8.0.0",
     "eslint-plugin-node": "^11.1.0",
